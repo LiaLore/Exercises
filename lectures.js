@@ -189,7 +189,7 @@
 // //
 // (function () {
 //     console.log("Anonymous function called....");
-// })();
+// })(); 
 
 // // a();
 // // How will you call anonymous function?
