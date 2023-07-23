@@ -1,6 +1,14 @@
 // const text = document.getElementById("smt");
 
+//////////////
+
+// 283. Move Zeroes
+// Given an integer array nums, move all 0's to the end of it while
+// maintaining the relative order of the non-zero elements.
+
 //-------------------   #283 Move Zeroes
+
+
 var moveZeroes = function(nums) {
     
  for (let i = nums.length-1; i >= 0; i--){
@@ -13,15 +21,9 @@ const arr = [0,1,0,3,12];
 const rv = moveZeroes(arr);
 console.log(rv);
 
-//------------------------#88
+// 88.
 
-// /**
-//  * @param {number[]} nums1
-//  * @param {number} m
-//  * @param {number[]} nums2
-//  * @param {number} n
-//  * @return {void} Do not return anything, modify nums1 in-place instead.
-//  */
+
 // var merge = function(nums1, m, nums2, n) {
 //     let newArr = nums1(2).concat(nums2(3));
 //     newArr.sort();
@@ -38,11 +40,6 @@ console.log(rv);
 
 
 
-// /**
-//  * @param {string[]} words
-//  * @return {number}
-//  */
-
 // let words = ["cd","ac","dc","ca","zz"]
 // var maximumNumberOfStringPairs = (words) =>{
 //    for(let i = 0; i < words.length; i++){
@@ -56,12 +53,12 @@ console.log(rv);
 
 
 
-                                                               // მოვძებნო თხა
-                                                               // დავარევერსო
-                                                               // შევადარო ერთმანეთს
-                                                               // დავაბრუნო შედეგი
-                                                               // დავთვალო ინდეხების რაოდენობა
-                                                               // ?????????????????????
+                           // მოვძებნო თხა
+                           // დავარევერსო
+                           // შევადარო ერთმანეთს
+                           // დავაბრუნო შედეგი
+                           // დავთვალო ინდეხების რაოდენობა
+                           // ?????????????????????
 
 // const nums1 = [1,2,3,0,0,0];
 // const nums2 = [2,5,6];
