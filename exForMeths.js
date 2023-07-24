@@ -18,7 +18,9 @@ const streetRes = streetNum.map((element)=>{
     return "165/Wolfstreet/ " + element +",  Zip code: 11324";
 });
 console.log(streetRes);
+
 // concat() ----> array1.concat(array2,array3);
+
 // sort() ----> array.sort(compareFunction);
 // spred ooperator ---> array1.concat(...array2, ...array3);
 
