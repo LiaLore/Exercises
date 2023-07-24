@@ -15,7 +15,11 @@ console.log("forEach:", picture);
 // map() ---> array.map(function(element,index,array){},this);
 const streetNum = [1,2,3,4,5,6,7,8,9,10];
 const streetRes = streetNum.map((element)=>{
+    if(element > 9 && element < 100){
+    return "165/Wolfstreet/ " + element +", Zip code: 11324";
+    }else{
     return "165/Wolfstreet/ " + element +",  Zip code: 11324";
+    }
 });
 console.log(streetRes);
 
