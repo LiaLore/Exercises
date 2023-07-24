@@ -30,15 +30,15 @@
     // // document.write("Reversed array is: <br>");
     // printArray(arr, n);
 
-    const arr = [1,2,3,4,5,];
+    // const arr = [1,2,3,4,5,];
 
-    const test = function test (arr){
-        arr.reverse();
-        // console.log(arr);
-    }
-    const newT = test(arr);
-    console.log(arr)
-    // console.log(newT)
+    // const test = function test (arr){
+    //     arr.reverse();
+    //     // console.log(arr);
+    // }
+    // const newT = test(arr);
+    // console.log(arr)
+    // // console.log(newT)
 
 
 // // toString() 
@@ -263,3 +263,17 @@
 // // IIFEs : Immediately invoked functions
 
 // message
+
+
+
+const ages = [32,33,16,40];
+const result = ages.filter(checkAdult);
+function checkAdult(age){
+    return age >= 18;
+}
+console.log(result);
+
+const result2 = ages.filter((age) => {
+    return age >= 33;
+})
+console.log(result2);
