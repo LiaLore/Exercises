@@ -39,15 +39,31 @@ console.log(sum);
 
 // concat() ----> array1.concat(array2,array3);
 
+let concat1 = ['a', 'b','c'];
+let concat2 = [1,2,3];
+let concat3 = [{name:'Lia', surname: "Lore"}, {counry: "Georgia", language: "Georgian"}];
+let newConcat = concat1.concat(concat2,concat3);
+console.log(newConcat);
+
 // sort() ----> array.sort(compareFunction);
+let strings = ['a', 'b', 'd','f','e'];
+let nums = [1,9,99,4,231];
+console.log(strings.sort()); 
+console.log("correct:", nums.sort((a,b)=>{return a-b}))
+console.log("wrong:", nums.sort()); 
 // spred ooperator ---> array1.concat(...array2, ...array3);
-
-
-
+let numbers = [1,3,5,32];
+let sts = ["a","b"]; 
+function sp(b,c,d){
+    return (b+d)-(c*d);
+}
+function spr (b,c) {return b + c}; 
+console.log(sp(...numbers));
+console.log (spr(sts));
 //Hoisting
 
-let ho = 5;
-console.log(ho * hoi); // ReferenceError
-let hoi = 0; 
+// let ho = 5;
+// console.log(ho * hoi); // ReferenceError
+// let hoi = 0; 
 
 
