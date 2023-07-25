@@ -59,11 +59,11 @@ function sp(b,c,d){
 }
 function spr (b,c) {return b + c}; 
 console.log(sp(...numbers));
-console.log (spr(sts));
+console.log (spr(...sts));
 //Hoisting
 
-// let ho = 5;
-// console.log(ho * hoi); // ReferenceError
-// let hoi = 0; 
+let ho = 5;
+console.log(ho * hoi); // ReferenceError
+let hoi = 0; 
 
 
