@@ -65,5 +65,3 @@ console.log (spr(...sts));
 let ho = 5;
 console.log(ho * hoi); // ReferenceError
 let hoi = 0; 
-
-

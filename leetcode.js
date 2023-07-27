@@ -146,4 +146,19 @@ var missingNumber = function(nums) {
 const smt = missingNumber(numbers);
 console.log(smt);
 
-
+let head = [1,1,3];
+// next?? val??
+var deleteDuplicates = function(vva) {
+    let newArr = vva;
+    while(newArr && newArr.next){
+        if(newArr.val == newArr.next.val){
+            newArr.next = newArr.next.next;
+        }else{
+            newArr = newArr.next;
+        }
+    }
+    return newArr;
+    // this.deleteDuplicates.sort();
+};
+let deleteDup = deleteDuplicates(head);
+console.log(deleteDup);
