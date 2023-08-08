@@ -1,0 +1,55 @@
+1.დაწერე პროგრამა რომელიც კონსოლში გამოიტანს "Hello World" -ს.
+
+Write a program to print "Hello, World!" to the console. 
+
+2.შექმენით ცვლადი და მიანიჭეთ მას რიცხვი. დაბეჭდეთ ცვლადის მნიშვნელობა.
+
+Create a variable and assign a number to it. Print the value of the variable. 
+
+3.დაწერეთ პროგრამა ორი რიცხვის შესაკრებად და შედეგის გამოსატანად.
+
+Write a program to add two numbers and display the result. 
+
+4.დაწერეთ პროგრამა, რომელიც გამოაკლებს ორ რიცხვს ერთმანეთს და აჩვენებს შედეგს.
+
+Write a program to subtract two numbers and display the result.
+
+5.დაწერეთ პროგრამა ორი რიცხვის გასამრავლებლად და შედეგის გამოსატანად.
+
+Write a program to multiply two numbers and display the result. 
+
+6.დაწერეთ პროგრამა ორი რიცხვის გასაყოფად და შედეგის გამოსატანად.
+
+Write a program to divide two numbers and display the result.
+
+7.დაწერეთ პროგრამა ორი რიცხვის გაყოფის ნაშთის გამოსათვლელად.
+
+Write a program to calculate the remainder of dividing two numbers. 
+
+8.შექმენით ცვლადი და მიანიჭეთ მას სტრიქონი. ამობეჭდეთ სტრიქონის სიგრძე.
+
+Create a variable and assign a string to it. Print the length of the string.
+9.დაწერეთ პროგრამა ორი სტრიქონის შესაერთებლად და შედეგის ჩვენების მიზნით.
+
+Write a program to concatenate two strings and display the result.
+10.დაწერეთ პროგრამა სტრიქონის დიდ ასოებზე გადასაყვანად.
+
+Write a program to convert a string to uppercase. 
+11.დაწერეთ პროგრამა სტრიქონის მცირე ასოზე გადასაყვანად.
+
+Write a program to convert a string to lowercase.
+12.დაწერეთ პროგრამა, რათა შეამოწმოთ რიცხვი ლუწია თუ კენტი.
+
+Write a program to check if a number is even or odd. 
+13.დაწერეთ პროგრამა, რათა შეამოწმოთ რიცხვი დადებითია, უარყოფითი თუ ნული.
+
+Write a program to check if a number is positive, negative, or zero. 
+14.დაწერეთ პროგრამა, რომ იპოვოთ მაქსიმალური ორი რიცხვიდან.
+
+Write a program to find the maximum of two numbers.
+15.დაწერეთ პროგრამა, რომ იპოვოთ მინიმალური ორი რიცხვიდან.
+
+Write a program to find the minimum of two numbers. 
+16.დაწერეთ პროგრამა, რათა შეამოწმოთ არის თუ არა რიცხვი გასაყოფი სხვა რიცხვზე.
+
+Write a program to check if a number is divisible by another number. 

@@ -1,0 +1,74 @@
+17.დაწერეთ პროგრამა, რათა შეამოწმოთ სტრიქონი ცარიელია თუ არა.
+
+Write a program to check if a string is empty or not. 
+
+18.დაწერეთ პროგრამა, რათა შეამოწმოთ, შეიცავს თუ არა სტრიქონი კონკრეტულ სიტყვას.
+
+Write a program to check if a string contains a specific word.
+
+19.დაწერეთ პროგრამა რომელიც კონსოლში გამოპრინტავს რიცხვებს 0 დან 10 ის ჩათვლით.
+
+Print the numbers from 1 to 10 in the console. 
+20.დაწერეთ პროგრამა, რათა შეამოწმოთ რიცხვი მარტივია თუ არა.
+
+Write a program to check if a number is prime or not. 
+
+21.დაწერეთ პროგრამა სტრიქონის შებრუნებისთვის.
+
+Write a program to reverse a string
+
+22.დაწერეთ პროგრამა, რომ იპოვოთ მასივის ყველა რიცხვის ჯამი.
+
+Write a program to find the sum of all numbers in an array. 
+
+23.დაწერეთ პროგრამა მასივში რიცხვების საშუალოს საპოვნელად.
+
+Write a program to find the average of numbers in an array. 
+
+24.დაწერეთ პროგრამა მასივიდან დუბლიკატების მოსაშორებლად.
+
+Write a program to remove duplicates from an array. 
+
+25.დაწერეთ პროგრამა რიცხვების მასივის ზრდის მიხედვით დასალაგებლად.
+
+Write a program to sort an array of numbers in ascending order. 
+
+26.დაწერეთ პროგრამა მასივში ყველაზე დიდი ელემენტის მოსაძებნად.
+
+Write a program to find the largest element in an array.
+
+27.დაწერეთ პროგრამა მასივის ყველაზე პატარა ელემენტის მოსაძებნად.
+
+Write a program to find the smallest element in an array.
+
+28.დაწერეთ პროგრამა, რათა შეამოწმოთ, შეიცავს თუ არა მასივი კონკრეტულ ელემენტს.
+
+Write a program to check if an array contains a specific element.
+
+29.დაწერეთ პროგრამა მასივიდან ელემენტის ამოსაღებად.
+
+Write a program to remove an element from an array. 
+
+30.დაწერეთ პროგრამა მასივში კონკრეტული ელემენტის გავრცელების რაოდენობის დასათვლელად.
+
+Write a program to count the number of occurrences of a specific element in an array. 
+
+31.დაწერეთ პროგრამა წინადადებაში ყველაზე გრძელი სიტყვის სიგრძის საპოვნელად.
+
+Write a program to find the length of the longest word in a sentence.
+
+32.დაწერეთ პროგრამა, რათა შეამოწმოთ არის თუ არა სტრიქონი პალინდრომი.
+
+Write a program to check if a string is a palindrome.
+
+33.დაწერეთ პროგრამა რომ წინადადებაში თითოეული სიტყვის პირველი ასოს დიდი ასოებით შეცვალოს.
+
+Write a program to capitalize the first letter of each word in a sentence.
+
+34.დაწერეთ პროგრამა, რომ იპოვოთ მასივის ყველა ლუწი რიცხვის ჯამი.
+
+Write a program to find the sum of all even numbers in an array. 
+
+35.დაწერეთ პროგრამა წინადადებაში სიტყვების თანმიმდევრობის შესაბრუნებლად.
+
+Write a program to reverse the order of words in a sentence. 
