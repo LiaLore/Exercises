@@ -1,0 +1,108 @@
+36.დაწერეთ პროგრამა მასივში სიდიდით მეორე რიცხვის მოსაძებნად.
+
+Write a program to find the second largest number in an array.
+
+37.დაწერეთ პროგრამა, რათა შეამოწმოთ არის თუ არა ორი მასივი ტოლი.
+
+Write a program to check if two arrays are equal. 
+
+38.დაწერეთ პროგრამა მასივში ელემენტის პირველი ადგილმდებარეობის ინდექსის მოსაძებნად.
+
+Write a program to find the index of the first occurrence of an element in an array.
+
+39.დაწერეთ პროგრამა, რომ ამოიღოთ ყველა ცრუ მნიშვნელობა მასივიდან.
+
+Write a program to remove all falsy values from an array.
+40.დაწერეთ პროგრამა მრავალგანზომილებიან მასივში ყველაზე დიდი ელემენტის მოსაძებნად.
+
+Write a program to find the largest element in a multi-dimensional array.
+41.დაწერეთ პროგრამა, რომ ამოიღოთ ყველა დუბლიკატი მასივიდან.
+
+Write a program to remove all duplicates from an array.
+42.დაწერეთ პროგრამა მასივში ელემენტის ბოლო ადგილმდებარეობის ინდექსის მოსაძებნად.
+
+Write a program to find the index of the last occurrence of an element in an array. 
+43.დაწერეთ პროგრამა რომ ორი სორტირებული მასივის შერთდეს და გახდეს ერთი მასივი რომელიც ასევე სორტირებული იქნება.
+
+Write a program to merge two sorted arrays into a single sorted array.
+44.დაწერეთ პროგრამა სტრიქონების მასივის ანბანის მიხედვით დასალაგებლად.
+
+Write a program to sort an array of strings in alphabetical order. 
+45.დაწერეთ პროგრამა მრავალ მასივებს შორის საერთო ელემენტების მოსაძებნად.
+
+Write a program to find the common elements among multiple arrays.
+46.დაწერეთ ფუნქცია, რომელიც მიიღებს წინადადებას შეყვანად და აბრუნებს უნიკალური სიტყვების მასივს ანბანური თანმიმდევრობით, გამოკლებით გავრცელებული ინგლისური სიტყვების, როგორიცაა "the", "a" და "is".
+
+Write a function that takes a sentence as input and returns an array of unique words in alphabetical order, excluding common English words such as "the", "a", and "is".
+47.დაწერეთ ფუნქცია, რომელიც იღებს სტრიქონს შეყვანად და აბრუნებს ჭეშმარიტს, თუ ის არის პანგრამა (შეიცავს ანბანის ყველა ასოს ერთხელ მაინც), ცრუ სხვა შემთხვევაში.
+
+Write a function that takes a string as input and returns true if it is a pangram (contains every letter of the alphabet at least once), false otherwise.
+
+48.დაწერეთ ფუნქცია, რომელიც მიიღებს ობიექტების მასივს და თვისების სახელს და აბრუნებს ამ თვისების უნიკალური მნიშვნელობების მასივს ყველა ობიექტიდან.
+
+Write a function that takes an array of objects and a property name, and returns an array of unique values for that property across all objects.
+
+49.დაწერეთ ფუნქცია, რომელიც იღებს სტრიქონს ინფუთად და აბრუნებს ობიექტს, რომელიც შეიცავს სტრიქონში თითოეული სიმბოლოს რაოდენობას, სივრცეების გამოკლებით.
+
+Write a function that takes a string as input and returns an object containing the count of each character in the string, excluding spaces.
+
+50.დაწერეთ ფუნქცია, რომელიც იღებს სტრიქონს ინფუთად და აბრუნებს ყველაზე გრძელ ქვესტრინგს, რომელიც შეიცავს მხოლოდ უნიკალურ სიმბოლოებს. თუ არსებობს რამდენიმე ქვესტრიქონი იმავე სიგრძით, დააბრუნეთ პირველი, რომელსაც შეხვდებით.
+
+Write a function that takes a string as input and returns the longest substring that contains only unique characters. If there are multiple substrings with the same length, return the first one you encounter.
+
+51.დაწერეთ პროგრამა, რომელიც ბეჭდავს ლუწ რიცხვებს 1-დან 20-მდე for loop-ის გამოყენებით.
+
+For Loop:
+Write a program that prints the even numbers between 1 and 20 using a for loop. 
+
+52.დაწერეთ პროგრამა, რომელიც იღებს რიცხვს ინფუთის სახით და ბეჭდავს კვირის შესაბამის დღეს switch/case-ის გამოყენებით. მაგალითად, თუ შეიყვანენ  1-ს, მან უნდა დაბეჭდოს "კვირა".
+
+
+Switch/Case:
+Write a program that takes a number as input and prints the corresponding day of the week using a switch/case statement. For example, if the input is 1, it should print "Sunday."
+
+53.დაწერეთ პროგრამა, რომელიც სთხოვს მომხმარებელს შეიყვანოს რიცხვი და დაბეჭდოს "Hello!" იმდენჯერ რამდენსაც უდრის ეს  შეყვანილი რიცხვი.
+
+
+While Loop:
+Write a program that asks the user to enter a number and keeps printing "Hello!" that many times using a while loop.
+
+54.დაწერეთ პროგრამა, რომელიც გამოთვლის რიცხვების ჯამს 1-დან 100-მდე for loop-ის გამოყენებით და დაბეჭდავს შედეგს.
+
+For Loop:
+Write a program that calculates the sum of numbers from 1 to 100 using a for loop and prints the result.
+
+55.დაწერეთ პროგრამა, რომელიც ინფუთის სახით მიიღებს თვის რიცხვს (1 იანვრისთვის, 2 თებერვლისთვის და ა.შ.) და ამობეჭდავს დღეების რაოდენობას ამ თვეში switch/case-ის გამოყენებით.
+
+Switch/Case:
+Write a program that takes a month number as input (1 for January, 2 for February, etc.) and prints the number of days in that month using a switch/case statement.
+
+56.დაწერეთ პროგრამა, რომელიც სთხოვს მომხმარებელს გამოიცნოს საიდუმლო რიცხვი 1-დან 10-მდე. განაგრძეთ გამოცნობის მოთხოვნა, სანამ ისინი სწორად გამოიცნობენ, while loop-ის გამოყენებით.
+
+While Loop:
+Write a program that asks the user to guess a secret number between 1 and 10. Keep asking for guesses until they guess correctly using a while loop.
+
+57.დაწერეთ პროგრამა, რომელიც მიიღებს შეფასებას (A, B, C, D ან F) ინფუთის სახით და დაბეჭდავს შესაბამის შეტყობინებას switch/case-ის გამოყენებით. მაგალითად, თუ ინფუთი არის "A", უნდა დაბეჭდოს "შესანიშნავი!"
+
+Switch/Case:
+Write a program that takes a grade (A, B, C, D, or F) as input and prints a corresponding message using a switch/case statement. For example, if the input is "A," it should print "Excellent!"
+58.დაწერეთ პროგრამა, რომელიც მოუწოდებს მომხმარებელს შეიყვანოს პაროლი. პროგრამამ უნდა გააგრძელოს პაროლის მოთხოვნა სწორი პაროლის შეყვანამდე. სწორი პაროლის შეყვანის შემდეგ აჩვენეთ წარმატების შეტყობინება. სწორი პაროლი არის "12345".
+
+
+While Loop:
+Write a program that prompts the user to enter a password. The program should keep asking for the password until the correct password is entered. Once the correct password is entered, display a success message. The correct password is "12345".
+59.დაწერეთ ფუნქცია სახელად sumDigits, რომელიც არგუმენტად იღებს რიცხვს და აბრუნებს მისი ციფრების ჯამს.
+
+Write a function called sumDigits that takes a number as an argument and returns the sum of its digits.
+60.დაწერეთ ფუნქცია სახელად countBs, რომელიც იღებს სტრიქონს თავის ერთადერთ არგუმენტად და აბრუნებს სტრიქონში დიდი "B" სიმბოლოების რაოდენობას.
+
+Write a function called countBs that takes a string as its only argument and returns the number of uppercase "B" characters in the string.
+61.დაწერეთ ფუნქცია სახელად min, რომელიც იღებს ორ არგუმენტს და აბრუნებს მათ მინიმუმს.
+
+Write a function called min that takes two arguments and returns their minimum.
+62.დაწერეთ ფუნქცია generateRandomNumber, რომელიც იღებს მინიმალურ და მაქსიმალურ რიცხვს არგუმენტებად და აბრუნებს შემთხვევით რიცხვს მინიმალურ და მაქსიმალურ მნიშვნელობებს შორის.
+
+Write a function called generateRandomNumber that takes a minimum number and a maximum number as arguments and returns a random number between the minimum and maximum values (inclusive).
+63.დაწერეთ ფუნქცია სახელწოდებით capitalizeWords, რომელიც იღებს წინადადებას (სტრიქონს) არგუმენტად და აბრუნებს ახალ წინადადებას, სადაც თითოეული სიტყვის პირველი ასო დიდია.
+
+Write a function called capitalizeWords that takes a sentence (string) as an argument and returns a new sentence where the first letter of each word is capitalized.

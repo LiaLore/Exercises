@@ -112,22 +112,16 @@ console.log("correct increase:", numsArr.sort((a,b)=>{return a-b}))
 
 // 26. Write a program to find the largest element in an array.
 
-// 1. (it's working but WHY??) 
-for (i = 0; i <= numsArr.length; i++){
-    if(numsArr[i] > i){
-        largest = numsArr[i]; 
-    }
-}
-console.log(largest); // განსაზღვრული არ არის და რატომ არ აერორებს??
-// 2. 
+// 1. 
+let numsArray = [1,2,3,4,5];
 let largest1 = 0;
-for (let i = 0; i <= numsArr.length; i++){
-    if(numsArr[i] > largest1){
-        largest1 = numsArr[i];
+for (let i = 0; i <= numsArray.length; i++){
+    if(numsArray[i] > largest1){
+        largest1 = numsArray[i];
     }
 }
-console.log(largest1);
-// 3.
+console.log("26: " + largest1);
+// 2.
 let lrgst = Math.max(...numsArr);
 console.log(lrgst);
 
@@ -165,14 +159,12 @@ console.log(newArr.filter(x => x ===56).length);
 
 let longWord = "Hello Dgliump";
 function findLongWord(sentence){
-    let longestWord = sentence.split(' ').reduce(function(longest, currentWoord){
-        return currentWoord.length > longest.length ? currentWoord : longest;
+    let longestWord = sentence.split(' ').reduce(function(longest, currentWord){
+        return currentWord.length > longest.length ? currentWord : longest;
     },"");
     return longestWord.length;
 }
 console.log(findLongWord(longWord))
-
-
 
 // 32. Write a program to check if a string is a palindrome.
 // I need to find shorter way to solve this task!! 
