@@ -1,3 +1,13 @@
+// step1. Array
+// step2. empty Array
+// step3. parseInt (I think array is not a number)
+// step4. sort
+// step5. for loop
+// step6. if statement (for push larger number end of the array)
+// step7. array.length - 1 (??)
+// step8. console last index 
+// let smth = array.unshift();
+// console.log(smth);
 let array = [0,1,2,3,4,5];
 console.log(typeof(array[i]))
 // let array = [1,32,45,7];
