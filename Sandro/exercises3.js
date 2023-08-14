@@ -8,7 +8,7 @@ for (let i = 0; i <= array36.length; i++) {
         secondLargestNumber = array36[i];
     }
 }
-console.log("36: " + secondLargestNumber);
+// console.log("36: " + secondLargestNumber);
 
 //NOTE:  I need to try to put all those numbers in a new array.
 
@@ -18,24 +18,24 @@ let array37 = [10, 35, 125, 35, 40, 40, 125, 50];
 let findDublicates = array37 => array37.filter((item, index) => array37.indexOf(item) !== index);
 // let dubEl = findDublicates(array37);
 // console.log(dubEl);
-console.log("37: " + findDublicates(array37));
+// console.log("37: " + findDublicates(array37));
 
 // 38. Write a program to find the index of the first occurrence of an element 
 //     in an array.
 let array38 = [10, 35, 125, 35, 40, 40, 125, 50];
-console.log(array38.shift());
+// console.log(array38.shift());
 
 // 39. Write a program to remove all falsy values from an array.
 let array39 = ["smth", 78, 0, NaN];
 // array39[2] = "0"; 
 // how can I leave 0 in an array like a number??
 let newArray39 = array39.filter(array39 => { return !!array39 });
-console.log("39: " + newArray39);
+// console.log("39: " + newArray39);
 
 // 40. Write a program to find the largest element in a multi-dimensional array.
 let array40 = [[9, 7, 99, 0], [90, 88, 554, 9], [45, 99, 0, 89]];
 let newArray40 = array40.reduce((a, b) => [...a, ...b]);
-console.log("40: " + Math.max(...newArray40));
+// console.log("40: " + Math.max(...newArray40));
 
 // 41. Write a program to remove all duplicates from an array. (google)
 let array41 = [10, 35, 125, 35, 40, 40, 35, 125, 50];
@@ -47,23 +47,23 @@ function removeDub(arr) {
     }, []);
     return unique;
 }
-console.log(`41: ${removeDub(array41)}`);
+// console.log(`41: ${removeDub(array41)}`);
 
 //42. Write a program to find the index of the last occurrence of an 
 //    element in an array. 
 let array42 = [10, 35, 125, 35, 40, 40, 125, 50];
-console.log(array42.pop());
+// console.log(array42.pop());
 
 // 43. Write a program to merge two sorted arrays into a single 
 //     sorted array.
 let array43 = [10, 35, 125, 35];
 let array43a = [40, 40, 125, 50];
 // let newArray43 = array43.reduce((a,b)=>[...a,...b]);
-console.log(array43.concat(array43a));
+// console.log(array43.concat(array43a));
 
 //44. Write a program to sort an array of strings in alphabetical order. 
 let array44 = ["one", "two", "three", "four", "five"];
-console.log(array44.sort());
+// console.log(array44.sort());
 
 //45. Write a program to find the common elements among multiple arrays.
 let array45 = [[10, 35, 125, 35, "a"], [40, 10, 125, "a", 50]];
@@ -71,7 +71,7 @@ let array45a = array45.reduce((a, b) => [...a, ...b]);
 
 const toFindDuplicates = array45a => array45a.filter((item, index) => array45a.indexOf(item) !== index)
 const duplicateElements = toFindDuplicates(array45a);
-console.log("45: " + duplicateElements);
+// console.log("45: " + duplicateElements);
 
 
 // 46. Write a function that takes a sentence as input and returns 
@@ -81,7 +81,10 @@ console.log("45: " + duplicateElements);
 let array46 = `Write a function that takes a sentence as input and returns an array of unique words in alphabetical order, excluding common English words such as "the", "a", and "is".`
 let array46a = array46.split(' is ').toString().split(' a ').toString().split(' the ').toString().split(' an ').toString();
 
-console.log(array46a);
+// console.log(array46a);
+
+// use a filter!!!!!! 
+
 // NOTE: I know it's not best way to solve this task, but... I will work about it later. :) :) 
 //       p.s. its not a function eather.. 
 
@@ -109,7 +112,7 @@ btn.addEventListener("click", () => {
         };
         return !alphaArr.length;
     };
-    console.log(isPangram(str));
+    // console.log(isPangram(str));
 })
 // Note: I need to read it carefully later!!  
 
@@ -124,9 +127,9 @@ let array48 = [{
     country: "USA",
     city: "Wilton",
 }];
-console.log("48: " + array48);
-console.log("48: " + array48[1]);
-console.log("48: " + array48[1].city);
+// console.log("48: " + array48);
+// console.log("48: " + array48[1]);
+// console.log("48: " + array48[1].city);
 
 
 // It's not a function!!
@@ -146,9 +149,9 @@ btn49.addEventListener("click", () => {
         }
         return result;
     }
-    console.log(countChar(string49, countABC));
+    // console.log(countChar(string49, countABC));
 })
-
+// create object 
 // Note: I think, it's not correct!
 
 // 50. Write a function that takes a string as input and returns the 
@@ -163,7 +166,7 @@ function findUniqueChar() {
     string50 = [...string50].join("");
     console.log("50: " + string50);
 }
-console.log(findUniqueChar());
+// console.log(findUniqueChar());
 
 // Note: its not correct!! 
 
@@ -179,7 +182,7 @@ for (let i = 1; i <= 20; i++) {
     }
     // return nums51;
 }
-console.log(nums51)
+// console.log(nums51)
 
 // 52. Switch/Case:  
 //     Write a program that takes a number as input and prints the 
@@ -210,7 +213,7 @@ switch (new Date().getDay()) {
         day = "Saturday";
         break;
 }
-console.log("Today is " + day);
+// console.log("Today is " + day);
 
 //NOTE: I need to learn more about it!! 
 
@@ -224,7 +227,7 @@ btn53.addEventListener("click", () => {
     let hello = 0;
     while (hello < input) {
         hello++;
-        console.log("Hello!");
+        // console.log("Hello!");
     }
 })
 
@@ -238,7 +241,7 @@ let sum54 = 0;
 for (let i = 0; i <= 100; i++) {
     sum54 = sum54 + i;
 }
-console.log("54: sum =  " + sum54);
+// console.log("54: sum =  " + sum54);
 
 // 55. Switch/Case: 
 //     Write a program that takes a month number as input 
@@ -246,60 +249,18 @@ console.log("54: sum =  " + sum54);
 //      days in that month using a switch/case statement.
 
 let btn55 = document.getElementById("btn55");
-btn55.addEventListener("click", () => {
+btn55.addEventListener("click", () => {});
 
-    let monthNumber = prompt("Enter the month number:");
-    let month = "";
-
-    switch (monthNumber) {
-        case 1: month = "January";
-            break;
-        case 2: month = "February";
-            break;
-        case 3: month = "March";
-            break;
-        case 4: month = "April";
-            break;
-        case 5: month = "May";
-            break;
-        case 6: month = "June";
-            break;
-        case 7: month = "July";
-            break;
-        case 8: month = "August";
-            break;
-        case 9: month = "September";
-            break;
-        case 10: month = "October";
-            break;
-        case 11: month = "November";
-            break;
-        case 12: month = "December";
-            break;
-    }
-    if (monthNumber == 1 || monthNumber == 3 || monthNumber == 5 || monthNumber == 7 ||
-        monthNumber == 8 || monthNumber == 10 || monthNumber == 12) {
-        console.log("In " + monthNumber + " are 31 days.");
-    } else if (monthNumber == 4 || monthNumber == 6 || monthNumber == 9 || monthNumber == 7 ||
-        monthNumber == 11) {
-        console.log("In" + monthNumber + " are 30 days.")
-    } else if (monthNumber == 2) {
-        console.log("In " + monthNumber + " are 28 days, but every 4th years are 29 days.");
-
-    } else {
-        console.log("Wrong Input!");
-    }
-});
-
-// Note: how can I print month name in log????????
+// work on it
 
 // 56. While Loop: 
 //     Write a program that asks the user to guess a secret number
 //     between 1 and 10. Keep asking for guesses until they guess 
 //     correctly using a while loop.
 let btn56 = document.getElementById("btn56");
+let secretNumber56 = 9; //it needs Randomizer 
+ 
 btn56.addEventListener("click", () => {
-    let secretNumber56 = 9;
     let number56 = parseInt(prompt("Enter secret Number:"));
     if (number56 === secretNumber56) {
         console.log(number56 + " is correct!")
@@ -321,25 +282,30 @@ let grd = 'C';
 let grade;
 switch (grd) {
     case 'A':
-        grade += "Exelent";
+        console.log()
+
         break;
     case 'B':
-        grade += "Good";
+        console.log()
+
         break;
     case 'C':
-        grade += "Average";
+        console.log()
+
         break;
     case 'D':
-        grade += "Poor";
+        console.log()
+
         break;
     case 'F':
-        grade += "Failure";
+        console.log()
         break;
     case 'I':
-        grade += "Incomplete";
+        console.log()
+
         break;
 }
-console.log(`Your grade is ${grade}`);
+// console.log(`Your grade is ${grade}`);
 
 // Note: Why is "undefined" in the console?
 
@@ -370,7 +336,7 @@ btn58.addEventListener("click", () => {
         let userPass = prompt("Enter the Password:");
         enterPass = userPass;
     } while (enterPass !== correctPass) {
-        console.log(`58: ${enterPass} is Correct! `)
+        // console.log(`58: ${enterPass} is Correct! `)
     }
 });
 
@@ -388,7 +354,7 @@ function sumDigits(num) {
     }
     console.log("Sum is: " + sum)
 }
-console.log(sumDigits(number59));
+// console.log(sumDigits(number59));
 
 
 
@@ -407,7 +373,7 @@ function countBs(string, count) {
     }
     return result;
 }
-console.log("60: " + countBs(string60, countB));
+// console.log("60: " + countBs(string60, countB));
 
 // 61. Write a function called min that takes two arguments and returns 
 //     their minimum.
@@ -418,18 +384,27 @@ function returnMin(num1, num2, num3) {
     let min = Math.min(num1, num2, num3);
     return min;
 }
-console.log("61: " + returnMin(num61a, num61b, num61c));
+// console.log("61: " + returnMin(num61a, num61b, num61c));
 
 // 62. Write a function called generateRandomNumber that takes a minimum
 //     number and a maximum number as arguments and returns a random 
 //     number between the minimum and maximum values (inclusive).
 let minNumber = 0;
 let maxNumber = 100;
-function generateRandomNumber(minNum, maxNum) {
-    let random = Math.floor((Math.random() * maxNum) + minNum);
-    return random;
-}
-console.log("62: " + generateRandomNumber(minNumber, maxNumber));
+function generateRandomNumber(min, max) {
+    if (min > max) {
+      // Swap min and max if the input is not in the correct order
+      [min, max] = [max, min];
+    }
+  
+    // Calculate the range and generate a random number within that range
+    const range = max - min + 1;
+    return Math.floor(Math.random() * range) + min;
+  }
+  
+  // Example usage:
+  const randomNumber = generateRandomNumber(5, 10);
+//   console.log("62:" + randomNumber); // This will output a random number between 5 and 10 (inclusive)
 
 // function generateRandomNumber(maxNum){
 //     // let random = Math.floor((Math.random() * maxNum)+ minNum)
@@ -444,17 +419,32 @@ console.log("62: " + generateRandomNumber(minNumber, maxNumber));
 // 63. Write a function called capitalizeWords that takes a sentence 
 //     (string) as an argument and returns a new sentence where the 
 //     first letter of each word is capitalized.
+function capitalizeWords(sentence) {
+    // Split the sentence into an array of words
+    const words = sentence.split(' ');
+  
+    // Capitalize the first letter of each word
+    const capitalizedWords = words.map(word => {
+      if (word.length === 0) {
+        return word; // Handle empty words (e.g., multiple spaces)
+      } else {
+        const firstLetter = word[0].toUpperCase();
+        const restOfWord = word.slice(1).toLowerCase();
+        return firstLetter + restOfWord;
+      }
+    });
+  
+    // Join the capitalized words back into a sentence
+    const capitalizedSentence = capitalizedWords.join(' ');
+  
+    return capitalizedSentence;
+  }
+  
+  // Test the function
+  const inputSentence = "hello world! this is a test.";
+  const capitalizedSentence = capitalizeWords(inputSentence);
+//   console.log("63: " + capitalizedSentence); // Output: "Hello World! This Is A Test."
+  
 
-let string63 = "hello world!";
-function capitalizeWords(str) {
-    const str63 = str.split("");
-    for (let i = 0; i < str.length; i++) {
-        str63[i] = str63[i].charAt(0).toUpperCase() + str63[i].slice(1);
-    }
-    const str63a = str63.join("");
-    return str63a;
-    // return str.toUpperCase();
-    // return str.charAt()
-}
-console.log("63: " + capitalizeWords(string63));
+  // Note: look at this code! 
 
