@@ -134,35 +134,38 @@ console.log("48: " +array48[1].city);
 // 49. Write a function that takes a string as input and returns an object 
 //     containing the count of each character in the string, excluding spaces.
 
+let btn49 = document.getElementById("btn49");
+btn49.addEventListener("click", ()=>{
 let string49 = "I am Lia and kal b b bdsds dadmv,bdfertrtrhgsfdfv, lopqe sdafsgdjfl mznxbvcz";
-let countABC = "b";
-
-function countChar (string,count){
-    let result = 0;
-    for (let i = 0; i < string.length; i++){
-        if (string.charAt(i) == count) 
-        result++
+let countABC = prompt("Enter Character:");
+    function countChar (string,count){
+        let result = 0;
+        for (let i = 0; i < string.length; i++){
+            if (string.charAt(i) == count) 
+            result++
+        }
+        return result;
     }
-    return result;
-}
 console.log(countChar(string49,countABC));
+})
+
+// Note: I think, it's not correct!
 
 // 50. Write a function that takes a string as input and returns the 
 //     longest substring that contains only unique characters. 
 //     If there are multiple substrings with the same length, return 
 //     the first one you encounter.
-
-
-
 function findUniqueChar(){
     let string50 = "return the first one you encounter."
     // string50.slice(" ").toString();
     string50 = string50.split("the");
     // string50 = new Set(string50); // I need to learn more about it!!
     string50 =[...string50].join("");
-    console.log(string50);
+    console.log("50: " + string50);
 }
 console.log(findUniqueChar());
+
+// Note: its not correct!! 
 
 
 // 51. For Loop: 
@@ -225,6 +228,7 @@ btn53.addEventListener("click", ()=>{
     }
 })
 
+// NOTE: I need to find the other way!
 
 // 54. For Loop: 
 //     Write a program that calculates the sum of numbers from 1 to 100 
@@ -234,7 +238,7 @@ let sum54 = 0;
 for(let i = 0; i <= 100; i++){
     sum54 = sum54+i;
 }
-console.log(sum54);
+console.log("54: sum =  " + sum54);
 
 // 55. Switch/Case: 
 //     Write a program that takes a month number as input 
@@ -289,27 +293,55 @@ btn55.addEventListener("click", () => {
 
 // Note: how can I print month name in log????????
 
-
-// to be continud......
-
-
-
-
-
-
-
-
 // 56. While Loop: 
 //     Write a program that asks the user to guess a secret number
 //     between 1 and 10. Keep asking for guesses until they guess 
 //     correctly using a while loop.
+let btn56 = document.getElementById("btn56");
+btn56.addEventListener("click", ()=>{
+    let secretNumber56 = 9;
+    let number56 = parseInt(prompt("Enter secret Number:"));
+    if(number56 === secretNumber56){
+        console.log(number56 + " is correct!")
+    }
+    while(number56 !== secretNumber56 ){
+        number56 = parseInt(prompt("It is incorrect. Enter correct secret Number:"));
+        console.log(number56 + " is correct!"); 
+    }
+});
+// There must be ather way!! (it's a long code)
 
 
+// 57. Switch/Case: 
+//     Write a program that takes a grade (A, B, C, D, or F) as input 
+//     and prints a corresponding message using a switch/case statement. 
+//     For example, if the input is "A," it should print "Excellent!"
 
-// 57. Switch/Case: Write a program that takes a grade (A, B, C, D, or F) 
-//     as input and prints a corresponding message using a switch/case 
-//     statement. For example, if the input is "A," it should print 
-//     "Excellent!"
+let grd = 'C';
+let grade;
+switch(grd){
+    case 'A':
+        grade += "Exelent";
+        break;
+    case 'B':
+        grade += "Good";
+        break;   
+    case 'C':
+        grade += "Average";
+        break;    
+    case 'D':
+        grade += "Poor";
+        break;    
+    case 'F':
+        grade += "Failure";
+        break;    
+    case 'I':
+        grade += "Incomplete";
+        break;    
+}
+console.log(`Your grade is ${grade}`);
+
+// Note: Why is "undefined" in the console?
 
 
 // 58. While Loop: Write a program that prompts the user to enter a 
@@ -317,10 +349,37 @@ btn55.addEventListener("click", () => {
 //     the correct password is entered. Once the correct password is 
 //     entered, display a success message. The correct password is "12345".
 
+let btn58 = document.getElementById("btn58");
+btn58.addEventListener("click", ()=> {
+    let correctPass = "1234567";
+    let enteredPass = prompt("Enter the Password:");
+    if(enteredPass === correctPass){
+        console.log(`${enteredPass} is Correct!`)
+    };
+    while( enteredPass !== correctPass){
+        enteredPass = prompt("Password is incorrect. Enter correct Password:");
+        if(enteredPass === correctPass){
+            console.log(`${enteredPass} is Correct!`)
+        };    
+    }
+})
+
 
 
 // 59. Write a function called sumDigits that takes a number as an argument 
 //     and returns the sum of its digits.
+//     (Google)
+let number59 = 10239;
+function sumDigits(num){
+    let sum = 0;
+    while(num){
+        sum += num % 10; // the remainder operator is for getting the 
+                         // digit for adding to sum! 
+        num = Math.floor(num / 10);
+    }
+    console.log("Sum is: " + sum)
+}
+console.log(sumDigits(number59))
 
 
 
@@ -329,19 +388,66 @@ btn55.addEventListener("click", () => {
 //     argument and returns the number of uppercase "B" characters in 
 //     the string.
 
-
+let string60 = "Write a function called countBs that takes a string as its only argument and returns the number of uppercase'B' characters in  the string."
+let countB = "B";
+function countBs (string,count){
+    let result = 0;
+    for (let i = 0; i < string.length; i++){
+        if (string.charAt(i) == count) 
+        result++
+    }
+    return result;
+}
+console.log("60: " + countBs(string60,countB));
 
 // 61. Write a function called min that takes two arguments and returns 
 //     their minimum.
-
-
+    let num61a = 13;
+    let num61b = 24;
+    let num61c = 467;
+    function returnMin (num1,num2, num3){
+        let min = Math.min(num1, num2,num3);
+        return min;
+    }
+    console.log("61: " + returnMin(num61a, num61b, num61c));
 
 // 62. Write a function called generateRandomNumber that takes a minimum
 //     number and a maximum number as arguments and returns a random 
 //     number between the minimum and maximum values (inclusive).
+let minNumber = 0;
+let maxNumber = 100;
+function generateRandomNumber(minNum, maxNum){
+    let random = Math.floor((Math.random() * maxNum)+ minNum)
+    return random;
+}
+console.log("62: " + generateRandomNumber(minNumber, maxNumber));
 
+// function generateRandomNumber(maxNum){
+//     // let random = Math.floor((Math.random() * maxNum)+ minNum)
+//     let random = Math.floor((Math.random() * maxNum))
+//     return Math.round(random);
+// }
+// console.log("62: " + generateRandomNumber(maxNumber));
+
+// Note:  if I want a random number between 50-100, it's not working.
 
 
 // 63. Write a function called capitalizeWords that takes a sentence 
 //     (string) as an argument and returns a new sentence where the 
 //     first letter of each word is capitalized.
+
+let string63 = "hello world!";
+function capitalizeWords(str){
+    const str63 = str.split("");
+    for(let i = 0; i < str.length; i++){
+        str63[i] = str63[i].charAt(0).toUpperCase() + str63[i].slice(1);
+    }
+    const str63a = str63.join("");
+    return str63a;
+    // return str.toUpperCase();
+    // return str.charAt()
+}
+console.log("63: "+ capitalizeWords(string63));
+
+// NOTE: Wrong output.
+
