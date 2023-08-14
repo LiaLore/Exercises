@@ -379,7 +379,7 @@ function sumDigits(num){
     }
     console.log("Sum is: " + sum)
 }
-console.log(sumDigits(number59))
+console.log(sumDigits(number59));
 
 
 
@@ -450,4 +450,3 @@ function capitalizeWords(str){
 console.log("63: "+ capitalizeWords(string63));
 
 // NOTE: Wrong output.
-
