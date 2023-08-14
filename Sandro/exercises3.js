@@ -368,7 +368,6 @@ btn58.addEventListener("click", () => {
     let enterPass = 0;
     do {
         let userPass = prompt("Enter the Password:");
-        enterPass = userPass;
     } while (enterPass !== correctPass) {
         console.log(`58: ${enterPass} is Correct! `)
     }
