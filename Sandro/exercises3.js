@@ -458,4 +458,3 @@ function capitalizeWords(str) {
 }
 console.log("63: " + capitalizeWords(string63));
 
-// NOTE: Wrong output.
