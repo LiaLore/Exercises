@@ -78,12 +78,19 @@ const duplicateElements = toFindDuplicates(array45a);
 //     an array of unique words in alphabetical order, 
 //     excluding common English words such as "the", "a", and "is".
 
-let array46 = `Write a function that takes a sentence as input and returns an array of unique words in alphabetical order, excluding common English words such as "the", "a", and "is".`
-let array46a = array46.split(' is ').toString().split(' a ').toString().split(' the ').toString().split(' an ').toString();
+function uniqueWords(sentence) {
+    const commonWords = new Set(["the", "a", "an", "is", "are", "of", "and", "in", "to", "on", "for", "with"]);
+    const words = sentence.toLowerCase().split(/\s+/);
+    
+    const uniqueSortedWords = words.filter(word => !commonWords.has(word)).filter((value, index, self) => self.indexOf(value) === index).sort();
+    
+    return uniqueSortedWords;
+}
 
-// console.log(array46a);
+const str56 = "The moon is not blue, it is gray.";
+const result = uniqueWords(str46);
+console.log(result); 
 
-// use a filter!!!!!! 
 
 // NOTE: I know it's not best way to solve this task, but... I will work about it later. :) :) 
 //       p.s. its not a function eather.. 
@@ -113,7 +120,7 @@ btn.addEventListener("click", () => {
         return !alphaArr.length;
     };
     // console.log(isPangram(str));
-})
+});
 // Note: I need to read it carefully later!!  
 
 // 48. Write a function that takes an array of objects and a property 

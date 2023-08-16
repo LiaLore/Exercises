@@ -169,12 +169,59 @@ function str6 (str){
 //   Example string : 'dog'
 //   Expected Output : d,do,dog,o,og,g
 
+const exampleString = 'generation';
+
+function generateCombinations(inputString) {
+    const combinations = [];
+    
+    for (let i = 0; i < inputString.length; i++) {
+        for (let j = i + 1; j <= inputString.length; j++) {
+            combinations.push(inputString.slice(i, j));
+        }
+    }
+    
+    return combinations;
+}
+const result = generateCombinations(exampleString);
+// console.log(result);
+
 
 // 8. Write a JavaScript function to find the first not repeated character.
 //    Sample arguments : 'abacddbec'
 //    Expected output : 'e'
+// ChatGPT
+
+function firstNonRepeatedCharacter(str) {
+    const charCount = new Map();
+    
+    for (const char of str) {
+        if (charCount.has(char)) {
+            charCount.set(char, charCount.get(char) + 1);
+        } else {
+            charCount.set(char, 1);
+        }
+    }
+    
+    for (const [char, count] of charCount) {
+        if (count === 1) {
+            return char;
+        }
+    }
+    
+    return null;
+}
+
+const inputString8 = 'abacddbec';
+const firstNonRepeated = firstNonRepeatedCharacter(inputString8);
+
+if (firstNonRepeated !== null) {
+    // console.log(firstNonRepeated); // Output: 'e'
+} else {
+    // console.log('No non-repeated characters found.');
+}
 
 
+// Note: I need to understend more about it! 
 
 // 9. Find the Maximum Subarray Sum: Write a function that takes an array 
 //    of integers as input and finds the contiguous subarray within the 
@@ -182,6 +229,24 @@ function str6 (str){
 //    For example, given the array [-2, 1, -3, 4, -1, 2, 1, -5, 4], 
 //    the function should return 6, which corresponds to the sum of the
 //    subarray [4, -1, 2, 1].
+// ChatGPT
+
+function maxSubarraySum(arr) {
+    let maxEndingHere = arr[0];
+    let maxSoFar = arr[0];
+
+    for (let i = 1; i < arr.length; i++) {
+        maxEndingHere = Math.max(arr[i], maxEndingHere + arr[i]);
+        maxSoFar = Math.max(maxSoFar, maxEndingHere);
+    }
+    return maxSoFar;
+}
+const array6 = [-2, 1, -3, 4, -1, 2, 1, -5, 4];
+const maxSum = maxSubarraySum(array6);
+// console.log(maxSum); // შეტყობინება: 6
+
+
+// Note: I need to understend more! 
 
 
 // 10. Rotate Array: Write a function that rotates an array of n elements 
@@ -189,13 +254,65 @@ function str6 (str){
 //     5, 6, 7] and k = 3, the function should modify the array to become 
 //     [5, 6, 7, 1, 2, 3, 4].
 
+function rotateArray(nums, k) {
+    k %= nums.length; // In case k is greater than array length
+
+    for (let i = 0; i < k; i++) {
+        const lastElement = nums.pop(); // Remove the last element
+        nums.unshift(lastElement); // Add it to the beginning
+    }
+}
+
+const inputArray = [1, 2, 3, 4, 5, 6, 7];
+const k = 5;
+rotateArray(inputArray, k);
+// console.log(inputArray); 
+
 
 // 11. Find Missing Number: Given an array containing n distinct numbers 
 //     taken from 0, 1, 2, ..., n, find the missing number. For example, 
 //      given the array [3, 0, 1], the function should return 2.
 
+function findMissingNumber(nums) {
+    const n = nums.length;
+    let expectedSum = (n * (n + 1)) / 2; // Sum of first n natural numbers
+    let actualSum = nums.reduce((sum, num) => sum + num, 0); // Sum of elements in the array
+    return expectedSum - actualSum;
+}
+
+const arr11 = [3, 0, 1, 4, 2, 6];
+// const missingNumber = findMissingNumber(arr11);
+// console.log(findMissingNumber(arr11));
 
 // 12. Merge Intervals: Given an array of intervals, merge overlapping 
 //     intervals and return the resulting merged intervals. For example,
 //     given the intervals [[1,3],[2,6],[8,10],[15,18]], the function 
 //     should return [[1,6],[8,10],[15,18]].
+
+function mergeIntervals(intervals) {
+    if (intervals.length === 0) {
+        return [];
+    }
+
+    intervals.sort((a, b) => a[0] - b[0]); // Sort intervals based on start times
+    const mergedIntervals = [intervals[0]];
+
+    for (let i = 1; i < intervals.length; i++) {
+        const currentInterval = intervals[i];
+        const lastMergedInterval = mergedIntervals[mergedIntervals.length - 1];
+
+        if (currentInterval[0] <= lastMergedInterval[1]) {
+            lastMergedInterval[1] = Math.max(lastMergedInterval[1], currentInterval[1]);
+        } else {
+            mergedIntervals.push(currentInterval);
+        }
+    }
+
+    return mergedIntervals;
+}
+
+const inputIntervals = [[1, 3], [2, 6], [8, 10], [15, 18]];
+const mergedIntervals = mergeIntervals(inputIntervals);
+// console.log(mergedIntervals);
+
+// Note:  REREAD it!!
