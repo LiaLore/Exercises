@@ -40,7 +40,6 @@ nav{
     width: 50vw;
     margin: 50px;
 }
-
 #navPart2 img{
     width: 50px;
     height: 30px;
@@ -48,7 +47,6 @@ nav{
 #body{
     flex-direction: column;
 }
-
 #searchBar{
     display: flex;
     justify-content: center;
@@ -59,15 +57,48 @@ nav{
 }
 li{
     list-style: none;
-    padding: 10px;
-    cursor: pointer;
-
+    padding: 30px 10px;
 }
 .list img{
-    width: 50px;
-    height: 75px;
+    width: 80px;
+    height: 105px;
+    cursor: pointer;
+}
+.list img:hover{
+    /* how I stop moving next book cvers? */
+    /* position:fixed; */
+    width: 100px;
+    height: 115px;
 }
 ul{
     display: flex;
+    /* position: relative; */
     justify-content: space-between;
+    width: 120px;
+    height: 155px;
 }
+.sign{
+    opacity: 60%;
+}
+.sign :hover{
+    opacity: 55%;
+}
+/* .category{
+    margin-left: 170px;
+    display: none;
+} */
+
+
+/* .dropDownMenu{
+    background-color: white;
+    width: 200px;
+} */
+
+/* .signIn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(225,225,225,9);
+    position: fixed;
+
+} */
