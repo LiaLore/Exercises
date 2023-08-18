@@ -10,8 +10,6 @@ for (let i = 0; i <= array36.length; i++) {
 }
 // console.log("36: " + secondLargestNumber);
 
-//NOTE:  I need to try to put all those numbers in a new array.
-
 // 37. Write a program to check if two arrays are equal. 
 
 let array37 = [10, 35, 125, 35, 40, 40, 125, 50];
@@ -27,10 +25,8 @@ let array38 = [10, 35, 125, 35, 40, 40, 125, 50];
 
 // 39. Write a program to remove all falsy values from an array.
 let array39 = ["smth", 78, 0, NaN];
-// array39[2] = "0"; 
-// how can I leave 0 in an array like a number??
 let newArray39 = array39.filter(array39 => { return !!array39 });
-// console.log("39: " + newArray39);
+console.log("39: " + newArray39);
 
 // 40. Write a program to find the largest element in a multi-dimensional array.
 let array40 = [[9, 7, 99, 0], [90, 88, 554, 9], [45, 99, 0, 89]];
@@ -87,9 +83,9 @@ function uniqueWords(sentence) {
     return uniqueSortedWords;
 }
 
-const str56 = "The moon is not blue, it is gray.";
+const str46 = "The moon is not blue, it is gray.";
 const result = uniqueWords(str46);
-console.log(result); 
+// console.log(result); 
 
 
 // NOTE: I know it's not best way to solve this task, but... I will work about it later. :) :) 
@@ -100,27 +96,27 @@ console.log(result);
 //     least once), false otherwise.
 //(GOOGLE)
 
-let btn = document.getElementById("btn");
-btn.addEventListener("click", () => {
-    str = prompt("Enter the sentence: ");
+// let btn = document.getElementById("btn");
+// btn.addEventListener("click", () => {
+    // str = prompt("Enter the sentence: ");
     // let stra = "asdadsdasd";
     // const str = 'We promptly judged antique ivory buckles for the next prize';
-    const isPangram = (str = '') => {
-        str = str.toLowerCase();
-        const { length } = str;
-        const alphabets = 'abcdefghijklmnopqrstuvwxyz';
-        const alphaArr = alphabets.split('');
-        for (let i = 0; i < length; i++) {
-            const el = str[i];
-            const index = alphaArr.indexOf(el);
-            if (index !== -1) {
-                alphaArr.splice(index, 1);
-            };
-        };
-        return !alphaArr.length;
-    };
+    // const isPangram = (str = '') => {
+        // str = str.toLowerCase();
+        // const { length } = str;
+        // const alphabets = 'abcdefghijklmnopqrstuvwxyz';
+        // const alphaArr = alphabets.split('');
+        // for (let i = 0; i < length; i++) {
+            // const el = str[i];
+            // const index = alphaArr.indexOf(el);
+            // if (index !== -1) {
+                // alphaArr.splice(index, 1);
+            // };
+        // };
+        // return !alphaArr.length;
+    // };
     // console.log(isPangram(str));
-});
+// });
 // Note: I need to read it carefully later!!  
 
 // 48. Write a function that takes an array of objects and a property 
@@ -144,20 +140,20 @@ let array48 = [{
 // 49. Write a function that takes a string as input and returns an object 
 //     containing the count of each character in the string, excluding spaces.
 
-let btn49 = document.getElementById("btn49");
-btn49.addEventListener("click", () => {
-    let string49 = "I am Lia and kal b b bdsds dadmv,bdfertrtrhgsfdfv, lopqe sdafsgdjfl mznxbvcz";
-    let countABC = prompt("Enter Character:");
-    function countChar(string, count) {
-        let result = 0;
-        for (let i = 0; i < string.length; i++) {
-            if (string.charAt(i) == count)
-                result++
-        }
-        return result;
-    }
-    // console.log(countChar(string49, countABC));
-})
+// let btn49 = document.getElementById("btn49");
+// btn49.addEventListener("click", () => {
+//     let string49 = "I am Lia and kal b b bdsds dadmv,bdfertrtrhgsfdfv, lopqe sdafsgdjfl mznxbvcz";
+//     let countABC = prompt("Enter Character:");
+//     function countChar(string, count) {
+//         let result = 0;
+//         for (let i = 0; i < string.length; i++) {
+//             if (string.charAt(i) == count)
+//                 result++
+//         }
+//         return result;
+//     }
+//     // console.log(countChar(string49, countABC));
+// })
 // create object 
 // Note: I think, it's not correct!
 
@@ -228,15 +224,15 @@ switch (new Date().getDay()) {
 //     Write a program that asks the user to enter a number and keeps 
 //     printing "Hello!" that many times using a while loop.
 
-let btn53 = document.getElementById("btn53");
-btn53.addEventListener("click", () => {
-    let input = prompt("Enter Number:");
-    let hello = 0;
-    while (hello < input) {
-        hello++;
-        // console.log("Hello!");
-    }
-})
+// let btn53 = document.getElementById("btn53");
+// btn53.addEventListener("click", () => {
+//     let input = prompt("Enter Number:");
+//     let hello = 0;
+//     while (hello < input) {
+//         hello++;
+//         // console.log("Hello!");
+//     }
+// })
 
 // NOTE: I need to find the other way!
 
@@ -255,8 +251,8 @@ for (let i = 0; i <= 100; i++) {
 //     (1 for January, 2 for February, etc.) and prints the number of 
 //      days in that month using a switch/case statement.
 
-let btn55 = document.getElementById("btn55");
-btn55.addEventListener("click", () => {});
+// let btn55 = document.getElementById("btn55");
+// btn55.addEventListener("click", () => {});
 
 // work on it
 
@@ -264,19 +260,19 @@ btn55.addEventListener("click", () => {});
 //     Write a program that asks the user to guess a secret number
 //     between 1 and 10. Keep asking for guesses until they guess 
 //     correctly using a while loop.
-let btn56 = document.getElementById("btn56");
-let secretNumber56 = 9; //it needs Randomizer 
+// let btn56 = document.getElementById("btn56");
+// let secretNumber56 = 9; //it needs Randomizer 
  
-btn56.addEventListener("click", () => {
-    let number56 = parseInt(prompt("Enter secret Number:"));
-    if (number56 === secretNumber56) {
-        console.log(number56 + " is correct!")
-    }
-    while (number56 !== secretNumber56) {
-        number56 = parseInt(prompt("It is incorrect. Enter correct secret Number:"));
-        console.log(number56 + " is correct!");
-    }
-});
+// btn56.addEventListener("click", () => {
+//     let number56 = parseInt(prompt("Enter secret Number:"));
+//     if (number56 === secretNumber56) {
+//         console.log(number56 + " is correct!")
+//     }
+//     while (number56 !== secretNumber56) {
+//         number56 = parseInt(prompt("It is incorrect. Enter correct secret Number:"));
+//         console.log(number56 + " is correct!");
+//     }
+// });
 // There must be ather way!! (it's a long code)
 
 
@@ -322,30 +318,30 @@ switch (grd) {
 //     the correct password is entered. Once the correct password is 
 //     entered, display a success message. The correct password is "12345".
 
-let btn58 = document.getElementById("btn58");
-btn58.addEventListener("click", () => {
-    let correctPass = "1234567";
-    //     let enteredPass = prompt("Enter the Password:");
-    //     if(enteredPass === correctPass){
-    //         console.log(`${enteredPass} is Correct!`)
-    //     };
-    //     while( enteredPass !== correctPass){
-    //         enteredPass = prompt("Password is incorrect. Enter correct Password:");
-    //         if(enteredPass === correctPass){
-    //             console.log(`58: ${enteredPass} is Correct!`)
-    //         };    
-    //     }
-    // });
+// let btn58 = document.getElementById("btn58");
+// btn58.addEventListener("click", () => {
+//     let correctPass = "1234567";
+//     //     let enteredPass = prompt("Enter the Password:");
+//     //     if(enteredPass === correctPass){
+//     //         console.log(`${enteredPass} is Correct!`)
+//     //     };
+//     //     while( enteredPass !== correctPass){
+//     //         enteredPass = prompt("Password is incorrect. Enter correct Password:");
+//     //         if(enteredPass === correctPass){
+//     //             console.log(`58: ${enteredPass} is Correct!`)
+//     //         };    
+//     //     }
+//     // });
 
 
-    let enterPass = 0;
-    do {
-        let userPass = prompt("Enter the Password:");
-        enterPass = userPass;
-    } while (enterPass !== correctPass) {
-        // console.log(`58: ${enterPass} is Correct! `)
-    }
-});
+//     let enterPass = 0;
+//     do {
+//         let userPass = prompt("Enter the Password:");
+//         enterPass = userPass;
+//     } while (enterPass !== correctPass) {
+//         // console.log(`58: ${enterPass} is Correct! `)
+//     }
+// });
 
 
 // 59. Write a function called sumDigits that takes a number as an argument 
