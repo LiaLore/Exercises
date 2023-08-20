@@ -31,7 +31,7 @@ console.log("39: " + newArray39);
 // 40. Write a program to find the largest element in a multi-dimensional array.
 let array40 = [[9, 7, 99, 0], [90, 88, 554, 9], [45, 99, 0, 89]];
 let newArray40 = array40.reduce((a, b) => [...a, ...b]);
-// console.log("40: " + Math.max(...newArray40));
+console.log("40: " + Math.max(...newArray40));
 
 // 41. Write a program to remove all duplicates from an array. (google)
 let array41 = [10, 35, 125, 35, 40, 40, 35, 125, 50];
@@ -74,8 +74,11 @@ const duplicateElements = toFindDuplicates(array45a);
 //     an array of unique words in alphabetical order, 
 //     excluding common English words such as "the", "a", and "is".
 
+// I dont know it!! has(??) && new Set
+
 function uniqueWords(sentence) {
     const commonWords = new Set(["the", "a", "an", "is", "are", "of", "and", "in", "to", "on", "for", "with"]);
+    
     const words = sentence.toLowerCase().split(/\s+/);
     
     const uniqueSortedWords = words.filter(word => !commonWords.has(word)).filter((value, index, self) => self.indexOf(value) === index).sort();
@@ -85,11 +88,15 @@ function uniqueWords(sentence) {
 
 const str46 = "The moon is not blue, it is gray.";
 const result = uniqueWords(str46);
-// console.log(result); 
+console.log(result);
 
 
 // NOTE: I know it's not best way to solve this task, but... I will work about it later. :) :) 
 //       p.s. its not a function eather.. 
+
+
+
+
 
 // 47. Write a function that takes a string as input and returns true 
 //     if it is a pangram (contains every letter of the alphabet at 

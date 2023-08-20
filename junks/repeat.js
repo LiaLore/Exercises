@@ -36,27 +36,71 @@ let newArray39 = array39.map(item => item === 67 ? false : item).filter(item => 
 
 // 40. Write a program to find the largest element in a multi-dimensional array.
 
+let array40 = [[9, 7, 99, 0], [90, 88, 554, 9], [45, 99, 0, 89]];
+// let array40a = array40.reduce((a, b) => [...a, ...b]);
+// console.log( Math.max(...array40a));
+let newArray40 = array40.reduce((a, b) => [...a, ...b]);
+// console.log("40: " + Math.max(...newArray40));
 
 // 41. Write a program to remove all duplicates from an array.
+let array41 = [2,34,55,65,34,55,2,443];
+let emptyarr = [];
+for(const item of array41){
+    if(!emptyarr.includes(item)){
+        emptyarr.push(item);
+    }
+}
+// console.log(emptyarr);
 
-
-//42. Write a program to find the index of the last occurrence of an 
-//    element in an array. 
+// 42. Write a program to find the index of the last occurrence of an 
+//     element in an array. 
+let array42 = [2,34,55,65,34,55,2,443];
+// console.log(array42.pop());
 
 
 // 43. Write a program to merge two sorted arrays into a single 
 //     sorted array.
+let array43a = [12,65,34,55,2,443];
+let array43b = [2,34,55,34,55,];
+let array43c = array43a.concat(...array43b); 
+// console.log (array43c); // or
+// console.log(array43a.concat(...array43b));
 
-//44. Write a program to sort an array of strings in alphabetical order. 
 
+// 44. Write a program to sort an array of strings in alphabetical order. 
+let array44 = ["a", "c","t", "m", "b"];
+// let array44a = array44.reduce((a,b) => a - b);
+// console.log(array44.sort())
 
-//45. Write a program to find the common elements among multiple arrays.
+// 45. Write a program to find the common elements among multiple arrays.
+let array45 = [[10, 35, 125, 35, "a"], [40, 10, 125, "a", 50]];
+const array45a = array45[0];
+const array45Common = array45a.filter(element => array45.every(array => array.includes(element)));
+// console.log(array45Common)
+// let smth = 2;
+// let array45ex = [10, 35, 125, 35, "a", smth];
+// console.log(array45ex.includes(smth));
 
 
 // 46. Write a function that takes a sentence as input and returns 
 //     an array of unique words in alphabetical order, 
 //     excluding common English words such as "the", "a", and "is".
-
+let array46 = ['God is dead, and we have killed him.'];
+// let array46 = ["[12,3,/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, ''$342,"]// [] <- არ იშლება
+function extractUniqueWords(sentence) {
+    // Common English words to exclude
+    const commonWords = new Set(["the", "a", "and", "is", "have", "him"]);
+    // Remove punctuation and convert to lowercase
+    const cleanedSentence = sentence.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, '');
+    // Split the sentence into words
+    const words = cleanedSentence.split(' ');
+    // Filter out common words and duplicates, then sort alphabetically
+    const uniqueWords = Array.from(new Set(words.filter(word => !commonWords.has(word)))).sort();
+    return uniqueWords;
+  }
+  const uniqueWordsArray = extractUniqueWords(array46[0]);
+  console.log(uniqueWordsArray);
+  
 
 // 47. Write a function that takes a string as input and returns true 
 //     if it is a pangram (contains every letter of the alphabet at 
